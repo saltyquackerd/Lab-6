@@ -14,7 +14,6 @@ if __name__ == "__main__":
     while True:
         # print the menu options
         print("Menu\n-------------\n1. Encode\n2. Decode\n3. Quit\n")
-
         menu_op = int(input("Please enter an option: "))
 
         if menu_op == 1:
@@ -22,7 +21,7 @@ if __name__ == "__main__":
             encoded_password = encode(password)
             print("Your password has been encoded and stored!")
         elif menu_op == 2:
-            pass
+            print(f"The encoded password is {encoded_password}, and the original password is {decode(encoded_password)}.")
         elif menu_op == 3:
             break
 
