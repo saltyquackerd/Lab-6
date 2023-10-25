@@ -7,6 +7,13 @@ def encode(pwd): # encodes the password
 
     return encoded
 
+def decode(pwd): #decodes the password
+    decoded = ""
+
+    for i in pwd:
+        decoded += str((int(i) - 3) % 10)
+
+    return decoded
 
 if __name__ == "__main__":
     encoded_password = ""
